@@ -1089,8 +1089,7 @@ public class NSDateComponents : NSObject, NSCopying, NSSecureCoding {
     internal var _calendar: NSCalendar?
     internal var _timeZone: NSTimeZone?
     internal var _values = [Int](count: 19, repeatedValue: NSDateComponentUndefined)
-    internal override init() {
-        super.init()
+    public override init() {
     }
     
     public override var hash: Int {
